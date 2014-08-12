@@ -8,8 +8,8 @@ json apiを作ろう
 仕様：
 /apiから始まるurlの時にquery paramから来た値を保存します。
 /からその値をjsonにして取り出してみましょう。
-何のパラメータが来ても 保存できるようにinterfaceを使いましょう。
-値はすべて文字列で良いですが、もしも時間があれば型を見て変換してください。
+jsonは属性が決められたもので良いです。
+もちろん時間があればフレキシブルなJSONを保持してそれを取り出すようにしても構いません。
 
 例：
 
@@ -18,9 +18,5 @@ json apiを作ろう
 $ curl http://localhost:4000/api?name=hoge&age=20
 { "name" : "hoge", "age" : "20" }
 $ curl http://localhost:4000/
-{ "name" : "hoge", "age" : "20" } #前と同じリクエストが帰る
-$ curl http://localhost:4000/api?name=hoge&age=20&hoge=fuga
-{ "name" : "hoge", "age" : "20", "hoge" : "fuga" }
-$ curl http://localhost:4000/
-{ "name" : "hoge", "age" : "20", "hoge" : "fuga" } #上書きできる
+{ "name" : "hoge", "age" : "20" }
 ```
