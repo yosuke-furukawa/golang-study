@@ -96,8 +96,8 @@ import (
 
 type User struct {
   // json:から始まるannotationを書く
-	Name string `json:name`
-	Age  int    `json:age`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }
 
 func main() {
@@ -129,8 +129,8 @@ import (
 )
 
 type User struct {
-	Name string `json:name`
-	Age  int    `json:age`
+	Name string `json:"name"`
+	Age  int    `json:"age"`
 }
 
 // String関数を実装する
