@@ -10,5 +10,9 @@ Golang ハンズオン資料
 目次
 --------------------------
 
-- JSON APIを作ってみる
-- [net/http](/001_net_http)
+JSON APIを作ってみる (ヒカルのGo 第二回)
+- [/001_net_http](/001_net_http)
+- [/002_net_http_inside](/002_net_http_inside)
+- [/003_encoding_json](/003_encoding_json)
+- [/004_file](/004_file)
+- [/005_json_api](/005_json_api)
